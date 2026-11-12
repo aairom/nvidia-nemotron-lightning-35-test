@@ -1,0 +1,7 @@
+$ bash .bob/skills/test-gate/scripts/run_tests.sh .
+== pytest
+........................................................................ [ 63%]
+.........................................                                [100%]
+113 passed in 4.53s
+OK: tests pass and every module has a test
+EXIT=0

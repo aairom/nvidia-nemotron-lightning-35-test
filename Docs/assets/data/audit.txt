@@ -1,0 +1,13 @@
+$ bash .bob/skills/project-audit/scripts/audit.sh
+PASS  README.md present
+PASS  License section in README
+PASS  Docs/Quickstart.md present
+PASS  Docs/Architecture.md present
+PASS  documents live in Docs/
+PASS  .gitignore policy
+PASS  no hard-coded secrets
+PASS  scripts are executable
+
+AUDIT PASSED
+(run test-gate separately for the unit tests)
+EXIT=0

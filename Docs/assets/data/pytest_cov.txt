@@ -1,0 +1,152 @@
+$ .venv/bin/python -m pytest -v -p no:cacheprovider --cov=moe_demo --cov=app --cov=docs_tools --cov-report=term-missing
+============================= test session starts ==============================
+platform darwin -- Python 3.13.9, pytest-9.2.0, pluggy-1.7.0 -- /Users/alainairom/Devs/nvidia-nemotron-lightning-35-test/.venv/bin/python
+rootdir: /Users/alainairom/Devs/nvidia-nemotron-lightning-35-test
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-7.1.0, anyio-4.16.0
+collecting ... collected 113 items
+
+tests/test_app.py::AppSmoke::test_example_click_with_stub PASSED         [  0%]
+tests/test_app.py::AppSmoke::test_runs_offline_without_exception PASSED  [  1%]
+tests/test_benchmark.py::BenchmarkTests::test_host_info PASSED           [  2%]
+tests/test_benchmark.py::BenchmarkTests::test_prefill_prompt_unique_and_sized PASSED [  3%]
+tests/test_benchmark.py::BenchmarkTests::test_run_case_records_metrics PASSED [  4%]
+tests/test_benchmark.py::BenchmarkTests::test_run_case_with_thinking PASSED [  5%]
+tests/test_build_docs.py::BuildTests::test_all_chapters_present PASSED   [  6%]
+tests/test_build_docs.py::BuildTests::test_every_figure_labelled PASSED  [  7%]
+tests/test_build_docs.py::BuildTests::test_every_internal_link_resolves PASSED [  7%]
+tests/test_build_docs.py::BuildTests::test_footer_and_cover PASSED       [  8%]
+tests/test_build_docs.py::BuildTests::test_main_writes_file PASSED       [  9%]
+tests/test_build_docs.py::BuildTests::test_no_external_resources PASSED  [ 10%]
+tests/test_build_docs.py::BuildTests::test_no_missing_evidence_placeholders PASSED [ 11%]
+tests/test_build_docs.py::BuildTests::test_pager_edges PASSED            [ 12%]
+tests/test_build_docs.py::BuildTests::test_strict_mode_detects_bad_reference PASSED [ 13%]
+tests/test_build_docs.py::BuildTests::test_toc_lists_sections PASSED     [ 14%]
+tests/test_categories.py::CategoryTests::test_classify_fallback_and_code PASSED [ 15%]
+tests/test_categories.py::CategoryTests::test_examples_classify_to_own_category PASSED [ 15%]
+tests/test_categories.py::CategoryTests::test_five_categories_with_examples PASSED [ 16%]
+tests/test_chapters_core.py::CoreChapterTests::test_each_chapter_renders_with_heading_and_figures PASSED [ 17%]
+tests/test_chapters_core.py::CoreChapterTests::test_expert_chapter_states_simulation_honestly PASSED [ 18%]
+tests/test_chapters_core.py::CoreChapterTests::test_module_roles_cover_every_source_file PASSED [ 19%]
+tests/test_chapters_ops.py::OpsChapterTests::test_each_chapter_renders PASSED [ 20%]
+tests/test_chapters_ops.py::OpsChapterTests::test_gui_runs_are_complete_records PASSED [ 21%]
+tests/test_chapters_ops.py::OpsChapterTests::test_performance_chapter_uses_measured_benchmark PASSED [ 22%]
+tests/test_charts.py::ChartTests::test_bar_chart_custom_values PASSED    [ 23%]
+tests/test_charts.py::ChartTests::test_bar_chart_escapes_and_wraps_labels PASSED [ 23%]
+tests/test_charts.py::ChartTests::test_bar_chart_rotates_labels_when_crowded PASSED [ 24%]
+tests/test_charts.py::ChartTests::test_diagram_and_sequence PASSED       [ 25%]
+tests/test_charts.py::ChartTests::test_expert_grid PASSED                [ 26%]
+tests/test_charts.py::ChartTests::test_hbar_stacked_legend_wraps PASSED  [ 27%]
+tests/test_charts.py::ChartTests::test_heatmap PASSED                    [ 28%]
+tests/test_charts.py::ChartTests::test_line_chart PASSED                 [ 29%]
+tests/test_charts.py::ChartTests::test_line_chart_empty PASSED           [ 30%]
+tests/test_charts.py::ChartTests::test_nice_max_and_fmt PASSED           [ 30%]
+tests/test_charts.py::ChartTests::test_radar PASSED                      [ 31%]
+tests/test_charts.py::ChartTests::test_radar_has_side_padding_for_long_labels PASSED [ 32%]
+tests/test_config.py::ConfigTests::test_env_file_and_defaults PASSED     [ 33%]
+tests/test_config.py::ConfigTests::test_settings PASSED                  [ 34%]
+tests/test_context.py::HelperTests::test_kpis_grid_legend_inline PASSED  [ 35%]
+tests/test_context.py::HelperTests::test_rich_whitelist PASSED           [ 36%]
+tests/test_context.py::HelperTests::test_table_escapes_unless_raw PASSED [ 37%]
+tests/test_context.py::CtxTests::test_chapters_constant PASSED           [ 38%]
+tests/test_context.py::CtxTests::test_duplicate_figure_id PASSED         [ 38%]
+tests/test_context.py::CtxTests::test_evidence_missing_placeholder PASSED [ 39%]
+tests/test_context.py::CtxTests::test_figure_numbering_resets_per_chapter PASSED [ 40%]
+tests/test_context.py::CtxTests::test_sections_and_head PASSED           [ 41%]
+tests/test_context.py::CtxTests::test_xref_lenient_and_resolved PASSED   [ 42%]
+tests/test_context.py::CtxTests::test_xref_strict_raises PASSED          [ 43%]
+tests/test_data.py::FileHelperTests::test_count_tests PASSED             [ 44%]
+tests/test_data.py::FileHelperTests::test_image_data_uri_resizes PASSED  [ 45%]
+tests/test_data.py::FileHelperTests::test_project_tree_skips_hidden PASSED [ 46%]
+tests/test_data.py::FileHelperTests::test_read_text_default_and_line_count PASSED [ 46%]
+tests/test_data.py::FileHelperTests::test_snippet PASSED                 [ 47%]
+tests/test_data.py::FileHelperTests::test_source_of PASSED               [ 48%]
+tests/test_data.py::BenchmarkDataTests::test_headline PASSED             [ 49%]
+tests/test_data.py::BenchmarkDataTests::test_load_benchmark_from_file PASSED [ 50%]
+tests/test_data.py::BenchmarkDataTests::test_per_category_excludes_cold_ttft PASSED [ 51%]
+tests/test_data.py::RouterDataTests::test_affinity_matrix_shape PASSED   [ 52%]
+tests/test_data.py::RouterDataTests::test_classifier_accuracy_all_correct PASSED [ 53%]
+tests/test_data.py::RouterDataTests::test_concentration PASSED           [ 53%]
+tests/test_data.py::RouterDataTests::test_simulated_shares_sum_to_one PASSED [ 54%]
+tests/test_data.py::RouterDataTests::test_strength_sweep_monotonic_and_restores PASSED [ 55%]
+tests/test_engine.py::OptionTests::test_build_messages PASSED            [ 56%]
+tests/test_engine.py::OptionTests::test_build_options_ok PASSED          [ 57%]
+tests/test_engine.py::OptionTests::test_build_options_validation PASSED  [ 58%]
+tests/test_engine.py::OptionTests::test_history_truncated PASSED         [ 59%]
+tests/test_engine.py::OptionTests::test_reasoning_share PASSED           [ 60%]
+tests/test_engine.py::OptionTests::test_resolve_think PASSED             [ 61%]
+tests/test_engine.py::StreamTests::test_options_forwarded PASSED         [ 61%]
+tests/test_engine.py::StreamTests::test_stream_answer_final_metrics PASSED [ 62%]
+tests/test_help_text.py::HelpTextTests::test_every_category_explains_its_experts PASSED [ 63%]
+tests/test_help_text.py::HelpTextTests::test_guides_explain_moe PASSED   [ 64%]
+tests/test_help_text.py::HelpTextTests::test_tooltips_cover_controls_and_metrics PASSED [ 65%]
+tests/test_metrics.py::MetricsTests::test_active_fractions PASSED        [ 66%]
+tests/test_metrics.py::MetricsTests::test_from_stats PASSED              [ 67%]
+tests/test_metrics.py::MetricsTests::test_missing_and_zero_values PASSED [ 68%]
+tests/test_ollama_client.py::ClientTests::test_chat_stream_content_and_stats PASSED [ 69%]
+tests/test_ollama_client.py::ClientTests::test_chat_stream_thinking PASSED [ 69%]
+tests/test_ollama_client.py::ClientTests::test_connection_refused PASSED [ 70%]
+tests/test_ollama_client.py::ClientTests::test_error_mid_stream PASSED   [ 71%]
+tests/test_ollama_client.py::ClientTests::test_http_error PASSED         [ 72%]
+tests/test_ollama_client.py::ClientTests::test_preload_unload_and_loaded_info PASSED [ 73%]
+tests/test_ollama_client.py::ClientTests::test_status_endpoints PASSED   [ 74%]
+tests/test_ollama_client.py::ClientTests::test_unknown_model PASSED      [ 75%]
+tests/test_router_sim.py::RouterTests::test_categories_differ_and_prefer_their_group PASSED [ 76%]
+tests/test_router_sim.py::RouterTests::test_counts_and_shares PASSED     [ 76%]
+tests/test_router_sim.py::RouterTests::test_deterministic PASSED         [ 77%]
+tests/test_router_sim.py::RouterTests::test_edge_cases PASSED            [ 78%]
+tests/test_router_sim.py::RouterTests::test_top_k_distinct_in_range PASSED [ 79%]
+tests/test_sampling.py::ParserTests::test_parse_ps_empty PASSED          [ 80%]
+tests/test_sampling.py::ParserTests::test_parse_ps_sums_only_matching_rows PASSED [ 81%]
+tests/test_sampling.py::ParserTests::test_parse_vm_stat PASSED           [ 82%]
+tests/test_sampling.py::ParserTests::test_parse_vm_stat_defaults PASSED  [ 83%]
+tests/test_sampling.py::ParserTests::test_take_sample_uses_commands PASSED [ 84%]
+tests/test_sampling.py::SamplerTests::test_collects_samples_and_peak PASSED [ 84%]
+tests/test_sampling.py::SamplerTests::test_failing_sampler_does_not_raise PASSED [ 85%]
+tests/test_stub_ollama.py::StubTests::test_stub_basics PASSED            [ 86%]
+tests/test_theme.py::CssTests::test_inline_code_style_is_reset_inside_pre PASSED [ 87%]
+tests/test_theme.py::FigureTests::test_caption_escaped_and_label_defaults_to_id PASSED [ 88%]
+tests/test_theme.py::FigureTests::test_kinds_and_badge PASSED            [ 89%]
+tests/test_theme.py::FigureTests::test_shot_has_browser_chrome PASSED    [ 90%]
+tests/test_theme.py::FigureTests::test_unknown_kind PASSED               [ 91%]
+tests/test_theme.py::ShotTests::test_pins_boxes_legend PASSED            [ 92%]
+tests/test_theme.py::ShotTests::test_without_pins_has_no_legend PASSED   [ 92%]
+tests/test_theme.py::TerminalTests::test_bad_wins_over_good PASSED       [ 93%]
+tests/test_theme.py::TerminalTests::test_colouring_and_escaping PASSED   [ 94%]
+tests/test_theme.py::CodeTests::test_callout PASSED                      [ 95%]
+tests/test_theme.py::CodeTests::test_code_wrapper PASSED                 [ 96%]
+tests/test_theme.py::CodeTests::test_highlight PASSED                    [ 97%]
+tests/test_ui_components.py::UiTests::test_expert_panels PASSED          [ 98%]
+tests/test_ui_components.py::UiTests::test_html_escaped PASSED           [ 99%]
+tests/test_ui_components.py::UiTests::test_metric_cards_empty_final_live PASSED [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.13.9-final-0 _______________
+
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+app.py                          231     39    83%   82, 96, 100-101, 103-108, 113-120, 122-126, 148-149, 218-219, 263, 271-274, 278-279, 281-283, 285, 300
+docs_tools/__init__.py            0      0   100%
+docs_tools/benchmark.py          84     46    45%   59-60, 77-128, 132
+docs_tools/build_docs.py         55      1    98%   100
+docs_tools/chapters_core.py     156      0   100%
+docs_tools/chapters_ops.py      123      0   100%
+docs_tools/charts.py            184      1    99%   23
+docs_tools/context.py            81      1    99%   132
+docs_tools/data.py              101      0   100%
+docs_tools/sampling.py           57      0   100%
+docs_tools/theme.py              53      0   100%
+moe_demo/__init__.py              0      0   100%
+moe_demo/categories.py           35      1    97%   235
+moe_demo/config.py               25      0   100%
+moe_demo/engine.py               65      0   100%
+moe_demo/help_text.py             4      0   100%
+moe_demo/metrics.py              33      0   100%
+moe_demo/ollama_client.py        95      8    92%   65-66, 76-77, 154, 166, 168, 170
+moe_demo/router_sim.py           47      0   100%
+moe_demo/ui_components.py        48      0   100%
+-----------------------------------------------------------
+TOTAL                          1477     97    93%
+============================= 113 passed in 5.82s ==============================
+EXIT=0

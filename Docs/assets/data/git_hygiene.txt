@@ -1,0 +1,3 @@
+$ bash .bob/skills/git-hygiene/scripts/ensure_gitignore.sh --check
+OK: ./.gitignore has all required entries
+EXIT=0

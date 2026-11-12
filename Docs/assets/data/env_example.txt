@@ -1,0 +1,16 @@
+# --- Application launcher (scripts/start.sh) ---
+# Command used to start the GUI (single command, headless so no browser is forced open)
+APP_START_CMD=".venv/bin/streamlit run app.py --server.port 8501 --server.headless true --browser.gatherUsageStats false"
+APP_HOST=localhost
+# Never 5000 on macOS (AirDrop)
+APP_PORT=8501
+
+# --- Ollama ---
+# Base URL of the local Ollama server
+OLLAMA_BASE_URL=http://localhost:11434
+# Default model preselected in the GUI
+OLLAMA_MODEL=nemotron-3.5-lightning:30b-a3b-mlx
+# How long Ollama keeps the model in memory after a request (e.g. 15m, 1h)
+OLLAMA_KEEP_ALIVE=15m
+# Read timeout in seconds (must cover a cold ~19 GB model load)
+OLLAMA_TIMEOUT=600

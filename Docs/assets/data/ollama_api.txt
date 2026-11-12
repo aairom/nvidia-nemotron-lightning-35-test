@@ -1,0 +1,17 @@
+$ curl -s http://localhost:11434/api/version
+{"version":"0.40.16"}
+$ curl -s http://localhost:11434/api/ps | python3 -m json.tool (trimmed)
+{
+  "models": [
+    {
+      "name": "nemotron-3.5-lightning:30b-a3b-mlx",
+      "model": "nemotron-3.5-lightning:30b-a3b-mlx",
+      "size": 22655971596,
+      "digest": "d1e17d7dabacb401dec6440b4ec987ea053b9568b01f89fb3d54f8b2e71397be",
+      "expires_at": "2026-11-12T11:47:03.17081+01:00",
+      "size_vram": 22655971596,
+      "context_length": 8192,
+      "runner": "mlx"
+    }
+  ]
+}

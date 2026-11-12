@@ -1,0 +1,28 @@
+$ ollama show nemotron-3.5-lightning:30b-a3b-mlx
+  Model
+    architecture        nemotron_h           
+    parameters          32.9B                
+    context length      262144               
+    embedding length    2688                 
+    quantization        nvfp4                
+    requires            0.40.5               
+    renderer            nemotron-3.5-nano    
+    parser              nemotron-3.5-nano    
+    template source     renderer_parser      
+
+  Capabilities
+    completion     
+    tools          
+    thinking       
+        levels     false, true, medium    
+        default    true                   
+
+  Parameters
+    temperature    1       
+    top_p          0.95    
+
+  License
+    NVIDIA Open Model Agreement                                     
+    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION    
+    ...                                                             
+

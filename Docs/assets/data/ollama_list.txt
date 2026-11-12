@@ -1,0 +1,6 @@
+$ ollama list
+NAME                                  ID              SIZE      MODIFIED          
+nemotron-3.5-lightning:30b-a3b-mlx    d1e17d7dabac    19 GB     About an hour ago    
+llama3.2:latest                       a80c4f17acd5    2.0 GB    8 weeks ago          
+granite-embedding:278m                1a37926bf842    562 MB    2 months ago         
+granite4.2:latest                     f586c02fdecd    5.3 GB    2 months ago         
