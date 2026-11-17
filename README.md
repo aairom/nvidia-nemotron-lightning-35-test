@@ -54,7 +54,8 @@ bash .bob/skills/python-env/scripts/setup_env.sh .
 scripts/start.sh        # prints the URL (http://localhost:8501)
 ```
 
-Details: [Docs/Quickstart.md](Docs/Quickstart.md) · Design: [Docs/Architecture.md](Docs/Architecture.md).
+Details: [Docs/Quickstart.md](Docs/Quickstart.md) · Design: [Docs/Architecture.md](Docs/Architecture.md) ·
+Token routing explained: [Docs/Token-Routing.md](Docs/Token-Routing.md).
 Dependencies: [requirements.txt](requirements.txt) (`streamlit`, `requests`); tests and documentation build:
 [requirements-dev.txt](requirements-dev.txt) (`pytest`, `pytest-cov`, `pillow`).
 
